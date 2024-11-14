@@ -1,90 +1,92 @@
-import { createTheme } from '@mui/material/styles';
-import { colors } from './colors';
-
-
-
-
-Shubham okajsdojhksdgfk 
-
-
-
-
-
-
-
-
-const theme = createTheme({
-    palette: {
-        primary: {
-            light: colors.blue[300],
-            main: colors.blue[500],
-            dark: colors.blue[700],
-            contrastText: colors.white[50],
-        },
-        secondary: {
-            light: colors.purple[300],
-            main: colors.purple[500],
-            dark: colors.purple[700],
-            contrastText: colors.white[50],
-        },
-        error: {
-            light: colors.red[300],
-            main: colors.red[500],
-            dark: colors.red[700],
-            contrastText: colors.white[50],
-        },
-        warning: {
-            light: colors.orange[300],
-            main: colors.orange[500],
-            dark: colors.orange[700],
-            contrastText: colors.black[900],
-        },
-        info: {
-            light: colors.grey[300],
-            main: colors.grey[500],
-            dark: colors.grey[700],
-            contrastText: colors.black[900],
-        },
-        success: {
-            light: colors.green[300],
-            main: colors.green[500],
-            dark: colors.green[700],
-            contrastText: colors.white[50],
-        },
-        background: {
-            default: colors.grey[50],
-            paper: colors.white[50],
-        },
-        text: {
-            primary: colors.black[900],
-            secondary: colors.grey[600],
-            disabled: colors.grey[400],
-        },
-        divider: colors.grey[300],
+export const colors = {
+    blue: {
+        50: '#ebf2ff',
+        100: '#cce5ff',
+        200: '#89baff',
+        300: '#5c9dff',
+        400: '#3380ff',
+        500: '#0066ff',
+        600: '#0057d4',
+        700: '#0045ad',
+        800: '#002669',
+        900: '#001642',
     },
-    components: {
-        MuiButton: {
-            styleOverrides: {
-                root: {
-                    borderRadius: 8,
-                    textTransform: 'none',
-                    '&:hover': {
-                        backgroundColor: colors.blue[100],
-                    },
-                },
-            },
-        },
-        MuiPaper: {
-            styleOverrides: {
-                elevation0: {
-                    backgroundColor: colors.white[50],
-                },
-                elevation1: {
-                    backgroundColor: colors.grey[50],
-                },
-            },
-        },
+    grey: {
+        50: '#fbfafd',
+        100: '#f4f4f6',
+        200: '#ececef',
+        300: '#dcdcde',
+        400: '#b3b3b5',
+        500: '#89888d',
+        600: '#626168',
+        700: '#4c4b51',
+        800: '#28272d',
+        900: '#18171d',
     },
-});
-
-export default theme;
+    red: {
+        50: '#fcf1ef',
+        100: '#fee1dd',
+        200: '#fcb5aa',
+        300: '#f57f6c',
+        400: '#ec5941',
+        500: '#dd2b0e',
+        600: '#c91c00',
+        700: '#ae1800',
+        800: '#8d1300',
+        900: '#4d0a00',
+    },
+    green: {
+        50: '#e3f9f4',
+        100: '#ccffde',
+        200: '#99ffbe',
+        300: '#5fff99',
+        400: '#33f57a',
+        500: '#1cd760',
+        600: '#14b94f',
+        700: '#039c3a',
+        800: '#037d30',
+        900: '#013a16',
+    },
+    orange: {
+        50: '#fff5e5',
+        100: '#ffe2b7',
+        200: '#ffcf8c',
+        300: '#ffbe5c',
+        400: '#ffa630',
+        500: '#fb8500',
+        600: '#e37400',
+        700: '#c95c00',
+        800: '#b04800',
+        900: '#552200',
+    },
+    yellow: {
+        50: '#fffce8',
+        100: '#fff5b4',
+        200: '#ffee81',
+        300: '#ffe64d',
+        400: '#ffdc2b',
+        500: '#ffca00',
+        600: '#e0a700',
+        700: '#b38900',
+        800: '#856700',
+        900: '#2e2900',
+    },
+    purple: {
+        50: '#f5f6ff',
+        100: '#ebe6f5',
+        200: '#d8c9eb',
+        300: '#c38af2',
+        400: '#aa6edf',
+        500: '#9d33da',
+        600: '#8530b5',
+        700: '#6f3ea5',
+        800: '#54318a',
+        900: '#211338',
+    },
+    white: {
+        50: '#ffffff',
+    },
+    black: {
+        900: '#000000',
+    },
+};
