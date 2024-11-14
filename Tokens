@@ -1,0 +1,78 @@
+import { createTheme } from '@mui/material/styles';
+import { colors } from './colors';
+
+const theme = createTheme({
+    palette: {
+        primary: {
+            light: colors.blue[300],
+            main: colors.blue[500],
+            dark: colors.blue[700],
+            contrastText: colors.white[50],
+        },
+        secondary: {
+            light: colors.purple[300],
+            main: colors.purple[500],
+            dark: colors.purple[700],
+            contrastText: colors.white[50],
+        },
+        error: {
+            light: colors.red[300],
+            main: colors.red[500],
+            dark: colors.red[700],
+            contrastText: colors.white[50],
+        },
+        warning: {
+            light: colors.orange[300],
+            main: colors.orange[500],
+            dark: colors.orange[700],
+            contrastText: colors.black[900],
+        },
+        info: {
+            light: colors.grey[300],
+            main: colors.grey[500],
+            dark: colors.grey[700],
+            contrastText: colors.black[900],
+        },
+        success: {
+            light: colors.green[300],
+            main: colors.green[500],
+            dark: colors.green[700],
+            contrastText: colors.white[50],
+        },
+        background: {
+            default: colors.grey[50],
+            paper: colors.white[50],
+        },
+        text: {
+            primary: colors.black[900],
+            secondary: colors.grey[600],
+            disabled: colors.grey[400],
+        },
+        divider: colors.grey[300],
+    },
+    components: {
+        MuiButton: {
+            styleOverrides: {
+                root: {
+                    borderRadius: 8,
+                    textTransform: 'none',
+                    '&:hover': {
+                        backgroundColor: colors.blue[100],
+                    },
+                },
+            },
+        },
+        MuiPaper: {
+            styleOverrides: {
+                elevation0: {
+                    backgroundColor: colors.white[50],
+                },
+                elevation1: {
+                    backgroundColor: colors.grey[50],
+                },
+            },
+        },
+    },
+});
+
+export default theme;
