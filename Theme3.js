@@ -5,7 +5,6 @@ const lightTheme = {
       main: colors.blue[500],
       light: colors.blue[50],
       dark: colors.blue[600],
-      darker: colors.blue[700],
       contrastText: colors.white[50],
     },
     text: {
