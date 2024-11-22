@@ -104,7 +104,6 @@ const darkTheme = {
       main: colors.blue[200],
       light: colors.blue[50],
       dark: colors.blue[300],
-      darker: colors.blue[400],
       contrastText: colors.white[50],
     },
     text: {
